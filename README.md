@@ -1,5 +1,5 @@
 # Camera Service
 
-### vite + react 
+### vite + react
 
 single page website

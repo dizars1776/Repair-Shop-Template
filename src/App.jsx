@@ -1,10 +1,29 @@
+import React from 'react'
+import Header from './Header'
+import Slider from './Slider'
+import FwSection from './FwSection'
+import Services from './Services'
+import NwSection from './NwSection'
+import CallToAction from './CallToAction'
+import SocialMedia from './SocialMedia'
+import ContactUs from './ContactUs'
+import Footer from './Footer'
 import './App.css'
 
 function App() {
   return (
-    <div className="flex w-screen justify-center">
-      <h1 className="text-3xl font-bold underline">Camera Service</h1>
+    <div id="App">
+      <Header />
+      <Slider />
+      <FwSection />
+      <Services />
+      <NwSection />
+      <CallToAction />
+      <SocialMedia />
+      <ContactUs />
+      <Footer />
     </div>
   )
 }
+
 export default App

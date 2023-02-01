@@ -1,3 +1,77 @@
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans:wght@300;400;600;800&family=Roboto:wght@300;400;500;700;900&display=swap');
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
+// reset
+*,
+:after,
+:before {
+  box-sizing: border-box;
+}
+
+#root {
+  width: 100%;
+}
+
+blockquote,
+body,
+button,
+div,
+form,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+hr,
+li,
+ol,
+p,
+ul {
+  margin: 0;
+  padding: 0;
+}
+
+/* Global rules */
+html {
+  background: hsl(20, 100%, 99%);
+  scroll-behavior: smooth;
+}
+
+body {
+  font: 16px 'Open Sans', sans-serif;
+  background-color: hsl(0, 0%, 100%);
+  color: hsl(0, 0%, 47%);
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  font-weight: 400;
+  color: hsl(0, 0%, 0%);
+}
+
+h1,
+h2,
+h3 {
+  line-height: 1.1em;
+}
+
+h2 {
+  font-family: 'Roboto', sans-serif;
+  font-size: 3.42857em;
+}
+
+a {
+  outline: 0;
+  color: hsl(200, 68%, 34%);
+  transition: all 0.2s ease-in-out;
+}
+
+section {
+  height: 100vh;
+}
