@@ -26,12 +26,12 @@ class Slider extends React.Component {
           <picture>
             <source
               media="(min-width: 640px)"
-              srcset="src/assets/images/slider/slide01.jpg"
+              srcset="./images/slider/slide01.jpg"
               alt="slide1"
             />
             <img
               className="w-full"
-              src="src/assets/images/slider/slide01mobile.jpg"
+              src="./images/slider/slide01mobile.jpg"
               alt="slide1 mobile"
             />
           </picture>
@@ -40,12 +40,12 @@ class Slider extends React.Component {
           <picture>
             <source
               media="(min-width: 640px)"
-              srcset="src/assets/images/slider/slide02.jpg"
+              srcset="./images/slider/slide02.jpg"
               alt="slide2"
             />
             <img
               className="w-full"
-              src="src/assets/images/slider/slide02mobile.jpg"
+              src="./images/slider/slide02mobile.jpg"
               alt="slide2 mobile"
             />
           </picture>
@@ -54,12 +54,12 @@ class Slider extends React.Component {
           <picture>
             <source
               media="(min-width: 640px)"
-              srcset="src/assets/images/slider/slide03.jpg"
+              srcset="./images/slider/slide03.jpg"
               alt="slide3"
             />
             <img
               className="w-full"
-              src="src/assets/images/slider/slide03mobile.jpg"
+              src="./images/slider/slide03mobile.jpg"
               alt="slide3 mobile"
             />
           </picture>
