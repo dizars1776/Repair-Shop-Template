@@ -15,7 +15,6 @@ function App() {
     <div id="App">
       <Header />
       <Slider />
-      <FwSection />
       <Services />
       <NwSection />
       <CallToAction />

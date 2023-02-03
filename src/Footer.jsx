@@ -4,7 +4,9 @@ class Footer extends React.Component {
   render() {
     return (
       <section id="footer">
-        <h1>Footer</h1>
+        <div className="container mx-auto">
+          <h1>Footer</h1>
+        </div>
       </section>
     )
   }

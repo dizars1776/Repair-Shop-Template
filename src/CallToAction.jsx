@@ -4,7 +4,9 @@ class CallToAction extends React.Component {
   render() {
     return (
       <section id="call-to-action">
-        <h1>Call to action</h1>
+        <div className="container mx-auto">
+          <h1>Call to action</h1>
+        </div>
       </section>
     )
   }

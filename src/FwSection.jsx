@@ -4,7 +4,9 @@ class FwSection extends React.Component {
   render() {
     return (
       <section id="full-width-section">
-        <h1>Full width section</h1>
+        <div className="container mx-auto">
+          <h1>Full width section</h1>
+        </div>
       </section>
     )
   }

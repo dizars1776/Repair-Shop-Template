@@ -4,7 +4,9 @@ class ContactUs extends React.Component {
   render() {
     return (
       <section id="contact-us">
-        <h1>Contact Us</h1>
+        <div className="container mx-auto">
+          <h1>Contact Us</h1>
+        </div>
       </section>
     )
   }
