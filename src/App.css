@@ -1,77 +1,46 @@
-@import url('https://fonts.googleapis.com/css2?family=Open+Sans:wght@300;400;600;800&family=Roboto:wght@300;400;500;700;900&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Outfit:wght@200;400;600;800&family=Roboto:wght@300;400;500;700;900&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@200;400;600;800&display=swap');
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
-// reset
-*,
-:after,
-:before {
-  box-sizing: border-box;
-}
 
 #root {
-  width: 100%;
+  @apply w-full;
 }
 
-blockquote,
-body,
-button,
-div,
-form,
-h1,
-h2,
-h3,
-h4,
-h5,
-h6,
-hr,
-li,
-ol,
-p,
-ul {
-  margin: 0;
-  padding: 0;
-}
+@layer base {
+  html {
+    @apply scroll-smooth;
+  }
 
-/* Global rules */
-html {
-  background: hsl(20, 100%, 99%);
-  scroll-behavior: smooth;
-}
+  body {
+    @apply bg-white text-base text-[#787878];
+  }
 
-body {
-  font: 16px 'Open Sans', sans-serif;
-  background-color: hsl(0, 0%, 100%);
-  color: hsl(0, 0%, 47%);
-}
+  h1,
+  h2,
+  h3,
+  h4,
+  h5,
+  h6 {
+    @apply font-normal text-[#0c2a39];
+  }
 
-h1,
-h2,
-h3,
-h4,
-h5,
-h6 {
-  font-weight: 400;
-  color: hsl(0, 0%, 0%);
-}
+  h1,
+  h2,
+  h3 {
+    @apply font-heading leading-5;
+  }
 
-h1,
-h2,
-h3 {
-  line-height: 1.1em;
-}
+  h2 {
+    @apply text-[3.42857em];
+  }
 
-h2 {
-  font-family: 'Roboto', sans-serif;
-  font-size: 3.42857em;
-}
+  a {
+    @apply text-[#1c6a92] outline-none duration-200 ease-in-out;
+  }
 
-a {
-  outline: 0;
-  color: hsl(200, 68%, 34%);
-  transition: all 0.2s ease-in-out;
-}
-
-section {
-  height: 100vh;
+  section {
+    @apply h-screen;
+  }
 }
