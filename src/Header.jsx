@@ -11,10 +11,10 @@ class Header extends React.Component {
   render() {
     return (
       <div id="header">
-        <div className="container mx-auto py-6 sm:flex sm:flex-row sm:items-center sm:justify-between sm:py-16">
+        <div className="container mx-auto py-6 sm:flex sm:flex-row sm:items-center sm:justify-between sm:py-12">
           {/* Company's name or logo */}
-          <h1 className="p-0 text-center text-3xl uppercase">
-            <a href="index.html">
+          <h1 className="m-0 text-center text-3xl uppercase tracking-wider">
+            <a href="/">
               Camera
               <br />
               Service Store
@@ -23,11 +23,11 @@ class Header extends React.Component {
           {/* Mobile menu */}
           <div
             id="mobilemenu"
-            className="fixed inset-x-2 bottom-0 z-10 block rounded-t-[2.5rem] bg-mobile-nav-texture px-4 sm:hidden"
+            className="fixed inset-x-1 bottom-0 z-10 block rounded-t-[2.5rem] bg-mobile-nav-texture sm:hidden"
           >
             <ul
               id="mobilenav"
-              className="flex w-full items-center justify-evenly gap-x-4 py-8"
+              className="flex w-full items-center justify-evenly py-6"
             >
               {menuItems.map(([title, url]) => (
                 <li key={title} className="whitespace-nowrap">
@@ -39,7 +39,7 @@ class Header extends React.Component {
             </ul>
           </div>
           {/* Menu  */}
-          <div className="hidden text-sm uppercase sm:block">
+          <div className="hidden uppercase tracking-wider sm:block">
             <ul id="menu" className="flex gap-x-4">
               {menuItems.map(([title, url]) => (
                 <li key={title}>

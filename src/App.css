@@ -14,7 +14,7 @@
   }
 
   body {
-    @apply bg-white text-base text-[#787878];
+    @apply bg-white text-base text-[#6b6b6b];
   }
 
   h1,
@@ -23,24 +23,34 @@
   h4,
   h5,
   h6 {
-    @apply font-normal text-[#0c2a39];
+    @apply font-normal;
   }
 
   h1,
   h2,
   h3 {
-    @apply mb-8 font-heading leading-5;
+    @apply mb-8 font-heading leading-5 tracking-wide;
   }
 
   h2 {
-    @apply text-[3.42857em];
+    @apply text-5xl capitalize text-[#1c6a92];
+  }
+
+  h3 {
+    @apply text-xl;
   }
 
   a {
-    @apply text-[#1c6a92] outline-none duration-200 ease-in-out;
+    @apply font-heading text-[#1c6a92] outline-none duration-200 ease-in-out;
   }
 
   section {
     @apply h-screen py-16 sm:py-20;
+  }
+}
+
+@layer components {
+  .container {
+    @apply xl:max-w-[1024px] 2xl:max-w-[1024px];
   }
 }
