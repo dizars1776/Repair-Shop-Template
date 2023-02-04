@@ -26,7 +26,7 @@ class Slider extends React.Component {
           <picture>
             <source
               media="(min-width: 640px)"
-              srcset="./images/slider/slide01.jpg"
+              srcSet="./images/slider/slide01.jpg"
               alt="slide1"
             />
             <img
@@ -40,7 +40,7 @@ class Slider extends React.Component {
           <picture>
             <source
               media="(min-width: 640px)"
-              srcset="./images/slider/slide02.jpg"
+              srcSet="./images/slider/slide02.jpg"
               alt="slide2"
             />
             <img
@@ -54,7 +54,7 @@ class Slider extends React.Component {
           <picture>
             <source
               media="(min-width: 640px)"
-              srcset="./images/slider/slide03.jpg"
+              srcSet="./images/slider/slide03.jpg"
               alt="slide3"
             />
             <img
