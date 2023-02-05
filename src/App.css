@@ -44,8 +44,12 @@
     @apply font-heading text-[#1c6a92] outline-none duration-200 ease-in-out;
   }
 
-  section {
-    @apply h-screen py-16 sm:py-20;
+  p {
+    @apply font-sans;
+  }
+
+  section:nth-child(n + 4) {
+    @apply h-screen py-20;
   }
 }
 
