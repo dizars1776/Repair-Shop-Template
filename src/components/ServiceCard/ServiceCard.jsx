@@ -10,6 +10,7 @@ class ServiceCard extends React.Component {
             alt={this.props.imgAlt}
             width="280px"
             height="160px"
+            className="rounded-xl transition-shadow hover:shadow-xl hover:shadow-[#1c6a92]"
           />
         </div>
         <h3 className="mb-0 self-center text-base font-bold uppercase sm:self-start md:text-lg lg:text-xl xl:text-2xl">
