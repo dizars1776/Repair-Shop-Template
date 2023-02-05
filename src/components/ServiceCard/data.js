@@ -4,7 +4,7 @@ const cards = [
     title: 'Camera body service',
     mainText:
       'Lorem ipsum dolor sit amet, consectetur adipiscing elit. Quisque ac lectus ac nulla lobortis pharetra et eget massa.',
-    img: 'images/camera-service-1.jpg',
+    img: 'images/services/camera-service-1.jpg',
     imgAlt: 'camera body service',
   },
   {
@@ -12,7 +12,7 @@ const cards = [
     title: 'Camera lens and sensor cleaning',
     mainText:
       'Lorem ipsum dolor sit amet, consectetur adipiscing elit. Quisque ac lectus ac nulla lobortis pharetra et eget massa. Nam interdum turpis in lorem lacinia, eu tincidunt leo tincidunt.',
-    img: 'images/camera-service-2.jpg',
+    img: 'images/services/camera-service-2.jpg',
     imgAlt: 'camera lens cleaning',
   },
   {
@@ -20,7 +20,7 @@ const cards = [
     title: 'Camera accessories repairs',
     mainText:
       'Aenean dignissim orci eget quam ultrices consectetur quis quis magna. Aenean eu ultrices sapien. Quisque quis lobortis risus.',
-    img: 'images/camera-service-3.jpg',
+    img: 'images/services/camera-service-3.jpg',
     imgAlt: 'camera accessories service',
   },
 ]
