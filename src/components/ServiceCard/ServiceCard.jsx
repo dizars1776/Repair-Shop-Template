@@ -12,10 +12,10 @@ class ServiceCard extends React.Component {
             height="160px"
           />
         </div>
-        <h3 className="mb-0 self-center text-sm font-bold uppercase sm:self-start">
+        <h3 className="mb-0 self-center text-base font-bold uppercase sm:self-start md:text-lg lg:text-xl xl:text-2xl">
           {this.props.title}
         </h3>
-        <p className="text-sm">{this.props.mainText}</p>
+        <p className="text-sm xl:text-base">{this.props.mainText}</p>
       </div>
     )
   }
