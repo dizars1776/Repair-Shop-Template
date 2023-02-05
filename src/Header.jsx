@@ -1,7 +1,6 @@
 import React from 'react'
 
 const menuItems = [
-  ['Home', '#header'],
   ['Services', '#services'],
   ['Cost Estimate', '#call-to-action'],
   ['Contact us', '#contact-us'],
