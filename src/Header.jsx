@@ -1,22 +1,17 @@
 import React from 'react'
 
-const menuItems = [
-  ['Services', '#services'],
-  ['Cost Estimate', '#call-to-action'],
-  ['Contact us', '#contact-us'],
-]
-
 class Header extends React.Component {
   render() {
+    const themeData = this.props.themeData.header
     return (
       <div id="header">
         <div className="container mx-auto py-6 sm:flex sm:flex-row sm:items-center sm:justify-between sm:py-12">
           {/* Company's name or logo */}
           <h1 className="m-0 text-center text-3xl uppercase tracking-wider">
             <a href="/">
-              Camera
+              {themeData.title ? themeData.title : 'title'}
               <br />
-              Service Store
+              {themeData.subTitle ? themeData.subTitle : 'subtitle'}
             </a>
           </h1>
           {/* Mobile menu */}
@@ -28,23 +23,37 @@ class Header extends React.Component {
               id="mobilenav"
               className="flex w-full items-center justify-evenly py-6"
             >
-              {menuItems.map(([title, url]) => (
-                <li key={title} className="whitespace-nowrap">
-                  <a href={url} className="text-sm uppercase text-white">
-                    {title}
-                  </a>
-                </li>
-              ))}
+              {themeData.menuItems
+                ? themeData.menuItems.map(([title, url]) => (
+                    <li key={title} className="whitespace-nowrap">
+                      <a href={url} className="text-sm uppercase text-white">
+                        {title}
+                      </a>
+                    </li>
+                  ))
+                : [1, 2, 3].map((e) => (
+                    <li key={e} className="whitespace-nowrap">
+                      <a href="#" className="text-sm uppercase text-white">
+                        item {e}
+                      </a>
+                    </li>
+                  ))}
             </ul>
           </div>
           {/* Menu  */}
           <div className="hidden uppercase tracking-wider sm:block">
             <ul id="menu" className="flex gap-x-4">
-              {menuItems.map(([title, url]) => (
-                <li key={title}>
-                  <a href={url}>{title}</a>
-                </li>
-              ))}
+              {themeData.menuItems
+                ? themeData.menuItems.map(([title, url]) => (
+                    <li key={title}>
+                      <a href={url}>{title}</a>
+                    </li>
+                  ))
+                : [1, 2, 3].map((e) => (
+                    <li key={e}>
+                      <a href="#">item {e}</a>
+                    </li>
+                  ))}
             </ul>
           </div>
         </div>

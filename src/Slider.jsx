@@ -7,6 +7,7 @@ import { EffectFade, Autoplay } from 'swiper'
 
 class Slider extends React.Component {
   render() {
+    const themeData = this.props.themeData.slider
     return (
       <Swiper
         centeredSlides={true}
@@ -22,48 +23,25 @@ class Slider extends React.Component {
         modules={[EffectFade, Autoplay]}
         className="headSwiper"
       >
-        <SwiperSlide>
-          <picture>
-            <source
-              media="(min-width: 640px)"
-              srcSet="./images/slider/slide01.jpg"
-              alt="slide1"
-            />
-            <img
-              className="w-full"
-              src="./images/slider/slide01mobile.jpg"
-              alt="slide1 mobile"
-            />
-          </picture>
-        </SwiperSlide>
-        <SwiperSlide>
-          <picture>
-            <source
-              media="(min-width: 640px)"
-              srcSet="./images/slider/slide02.jpg"
-              alt="slide2"
-            />
-            <img
-              className="w-full"
-              src="./images/slider/slide02mobile.jpg"
-              alt="slide2 mobile"
-            />
-          </picture>
-        </SwiperSlide>
-        <SwiperSlide>
-          <picture>
-            <source
-              media="(min-width: 640px)"
-              srcSet="./images/slider/slide03.jpg"
-              alt="slide3"
-            />
-            <img
-              className="w-full"
-              src="./images/slider/slide03mobile.jpg"
-              alt="slide3 mobile"
-            />
-          </picture>
-        </SwiperSlide>
+        {themeData &&
+          themeData.slides.map((slide, index) => {
+            return (
+              <SwiperSlide key={index}>
+                <picture>
+                  <source
+                    media="(min-width: 640px)"
+                    srcSet={slide.desktop}
+                    alt={slide.altText}
+                  />
+                  <img
+                    className="w-full"
+                    src={slide.mobile}
+                    alt={slide.altText}
+                  />
+                </picture>
+              </SwiperSlide>
+            )
+          })}
       </Swiper>
     )
   }
