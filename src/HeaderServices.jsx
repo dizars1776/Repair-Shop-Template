@@ -5,7 +5,9 @@ class HeaderServices extends React.Component {
     return (
       <div id="header-services">
         <div className="container mx-auto">
-          <h2 className="text-7xl font-semibold">Repair Services</h2>
+          <h2 className="text-6xl font-semibold sm:text-7xl">
+            Repair Services
+          </h2>
           <h3>Repair and maintenance of digital and classic cameras</h3>
           <p>
             Lorem ipsum dolor sit amet, consectetur adipiscing elit. Quisque ac

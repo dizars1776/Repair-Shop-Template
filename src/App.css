@@ -14,7 +14,7 @@
   }
 
   body {
-    @apply bg-white text-base text-[#6b6b6b];
+    @apply bg-white text-base text-base-light-gray;
   }
 
   h1,
@@ -33,7 +33,7 @@
   }
 
   h2 {
-    @apply text-5xl capitalize text-[#1c6a92];
+    @apply text-5xl capitalize text-heading-light-blue;
   }
 
   h3 {
@@ -48,12 +48,8 @@
     @apply font-sans;
   }
 
-  section:nth-child(n + 4) {
-    @apply h-screen py-20;
-  }
-
   section {
-    @apply -scroll-my-16 sm:-scroll-my-12
+    @apply -scroll-my-16 pb-20 sm:-scroll-my-12;
   }
 }
 

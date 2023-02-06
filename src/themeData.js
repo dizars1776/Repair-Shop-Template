@@ -65,6 +65,17 @@ const themeData = {
       'sed do eiusmod tempor incididunt ut labore',
       'et dolore magna aliqua',
     ],
+    iconList: [
+      {
+        text: 'We repair every camera brand',
+      },
+      {
+        text: '25 years of experience',
+      },
+      {
+        text: 'Satisfied customers',
+      },
+    ],
   },
 }
 
