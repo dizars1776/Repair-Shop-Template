@@ -20,6 +20,6 @@ You can fully customize all the variables with your own data by editing the `/sr
 
 - `npm install`
 
-3.Run the dev server or build for production
+  3.Run the dev server or build for production
 
 - `npm run dev` or `npm run build` respectively

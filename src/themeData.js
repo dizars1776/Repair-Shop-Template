@@ -56,6 +56,16 @@ const themeData = {
       },
     ],
   },
+  procedure: {
+    title: 'Repair order instructions',
+    ariaLabel: 'Repair procedure',
+    liItems: [
+      'Lorem ipsum dolor sit amet',
+      'consectetur adipiscing elit',
+      'sed do eiusmod tempor incididunt ut labore',
+      'et dolore magna aliqua',
+    ],
+  },
 }
 
 export default themeData
