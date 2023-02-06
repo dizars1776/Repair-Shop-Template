@@ -55,6 +55,6 @@
 
 @layer components {
   .container {
-    @apply xl:max-w-[1024px] 2xl:max-w-[1024px];
+    @apply w-[98%] lg:w-full xl:max-w-[1024px] 2xl:max-w-[1024px];
   }
 }
