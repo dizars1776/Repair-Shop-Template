@@ -51,6 +51,10 @@
   section:nth-child(n + 4) {
     @apply h-screen py-20;
   }
+
+  section {
+    @apply -scroll-my-16 sm:-scroll-my-12
+  }
 }
 
 @layer components {
