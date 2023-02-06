@@ -2,7 +2,7 @@ import React from 'react'
 import Header from './Header'
 import Slider from './Slider'
 import Services from './Services'
-import NwSection from './NwSection'
+import Procedure from './Procedure'
 import CallToAction from './CallToAction'
 import SocialMedia from './SocialMedia'
 import ContactUs from './ContactUs'
@@ -16,7 +16,7 @@ function App() {
       <Header themeData={themeData} />
       <Slider themeData={themeData} />
       <Services themeData={themeData} />
-      <NwSection />
+      <Procedure />
       <CallToAction />
       <SocialMedia />
       <ContactUs />
