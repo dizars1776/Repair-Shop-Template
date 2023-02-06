@@ -32,7 +32,7 @@ class Procedure extends React.Component {
             </p>
           </aside>
           {/* REPAIR INSTRUCTIONS */}
-          <article className="col-span-9 flex flex-col overflow-hidden pl-6 sm:col-span-6">
+          <article className="col-span-9 flex flex-col overflow-hidden sm:pl-6 sm:col-span-6">
             {themeData ? (
               <>
                 <h2 className="text-6xl font-semibold md:text-7xl">
