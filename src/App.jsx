@@ -17,7 +17,7 @@ function App() {
       <Slider themeData={themeData} />
       <Services themeData={themeData} />
       <Procedure themeData={themeData} />
-      <CallToAction />
+      <CallToAction themeData={themeData} />
       <SocialMedia />
       <ContactUs />
       <Footer />

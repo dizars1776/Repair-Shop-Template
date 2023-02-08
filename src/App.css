@@ -14,7 +14,7 @@
   }
 
   body {
-    @apply bg-white text-base text-base-light-gray;
+    @apply bg-white text-base text-base-light;
   }
 
   h1,
@@ -33,7 +33,7 @@
   }
 
   h2 {
-    @apply text-5xl capitalize text-heading-light-blue;
+    @apply text-5xl capitalize text-sky-800/90;
   }
 
   h3 {
@@ -41,7 +41,7 @@
   }
 
   a {
-    @apply font-heading text-[#1c6a92] outline-none duration-200 ease-in-out;
+    @apply font-heading text-sky-800/90 outline-none duration-200 ease-in-out;
   }
 
   section {
