@@ -10,7 +10,7 @@
 
 @layer base {
   html {
-    @apply scroll-smooth;
+    @apply scroll-smooth font-sans;
   }
 
   body {
@@ -42,10 +42,6 @@
 
   a {
     @apply font-heading text-[#1c6a92] outline-none duration-200 ease-in-out;
-  }
-
-  p {
-    @apply font-sans;
   }
 
   section {

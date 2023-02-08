@@ -1,6 +1,6 @@
 import React from 'react'
 import HeaderServices from './HeaderServices'
-import ServiceCard from './components/ServiceCard/ServiceCard'
+import ServiceCard from './serviceCard/ServiceCard'
 
 class Services extends React.Component {
   render() {

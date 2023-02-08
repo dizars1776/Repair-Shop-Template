@@ -5,6 +5,7 @@ import {
   TrophyIcon,
   UserGroupIcon,
 } from '@heroicons/react/24/solid'
+
 class Procedure extends React.Component {
   render() {
     const themeData = this.props.themeData.procedure
@@ -13,26 +14,26 @@ class Procedure extends React.Component {
         <div className="container mx-auto grid auto-rows-min grid-cols-9 gap-4 gap-y-20">
           {/* ICONS ASIDE */}
           <aside className="order-2 col-span-9 flex flex-col items-center sm:order-first sm:col-span-3 sm:items-start">
-            <p className="flex flex-col gap-y-8 text-center text-sm font-semibold uppercase md:font-extrabold">
-              <div className="flex flex-col items-center gap-y-4">
+            <div className="flex flex-col items-center gap-y-8 text-center text-sm font-semibold uppercase md:font-extrabold">
+              <p className="flex flex-col items-center gap-y-4">
                 <CameraIcon className="h-16 w-16 text-heading-light-blue" />
                 {themeData.iconList[0].text}
-                <hr class="h-px w-3/4 border-0 bg-gray-200 dark:bg-gray-700" />
-              </div>
-              <div className="flex flex-col items-center gap-y-4">
+              </p>
+              <hr className="h-px w-3/4 border-0 bg-gray-200 dark:bg-gray-700" />
+              <p className="flex flex-col items-center gap-y-4">
                 <TrophyIcon className="h-16 w-16 text-heading-light-blue" />
                 {themeData.iconList[1].text}
-                <hr class="h-px w-3/4 border-0 bg-gray-200 dark:bg-gray-700" />
-              </div>
-              <div className="flex flex-col items-center gap-y-4">
+              </p>
+              <hr className="h-px w-3/4 border-0 bg-gray-200 dark:bg-gray-700" />
+              <p className="flex flex-col items-center gap-y-4">
                 <UserGroupIcon className="h-16 w-16 text-heading-light-blue" />
                 {themeData.iconList[2].text}
-                <hr class="h-px w-3/4 border-0 bg-gray-200 dark:bg-gray-700" />
-              </div>
-            </p>
+              </p>
+              <hr className="h-px w-3/4 border-0 bg-gray-200 dark:bg-gray-700" />
+            </div>
           </aside>
           {/* REPAIR INSTRUCTIONS */}
-          <article className="col-span-9 flex flex-col overflow-hidden sm:pl-6 sm:col-span-6">
+          <article className="col-span-9 flex flex-col overflow-hidden sm:col-span-6 sm:pl-6">
             {themeData ? (
               <>
                 <h2 className="text-6xl font-semibold md:text-7xl">
