@@ -77,6 +77,26 @@ const themeData = {
       },
     ],
   },
+  social: {
+    socialProfiles: [
+      {
+        name: 'John Doe',
+        img: './images/social/profilephoto.jpg',
+        imgAlt: 'Owners profile photo',
+        haveMail: 'mailto:johnDoe@camera-service.com',
+        haveFb: 'https://facebook.com/profile-url',
+        type: 'Personal profile',
+      },
+      {
+        name: 'Camera Service',
+        img: './images/social/businessphoto.jpg',
+        imgAlt: 'Business profile photo',
+        haveMail: false,
+        haveFb: 'https://facebook.com/profile-url',
+        type: 'Business profile',
+      },
+    ],
+  },
 }
 
 export default themeData

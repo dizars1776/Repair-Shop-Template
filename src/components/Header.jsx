@@ -46,7 +46,9 @@ class Header extends React.Component {
               {themeData.menuItems
                 ? themeData.menuItems.map(([title, url]) => (
                     <li key={title}>
-                      <a href={url}>{title}</a>
+                      <a href={url} className="hover:text-rose-800">
+                        {title}
+                      </a>
                     </li>
                   ))
                 : [1, 2, 3].map((e) => (

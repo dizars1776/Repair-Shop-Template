@@ -4,7 +4,7 @@ import Slider from './components/Slider'
 import Services from './components/Services'
 import Procedure from './components/Procedure'
 import CallToAction from './components/CallToAction'
-import SocialMedia from './components/SocialMedia'
+import SocialNetworking from './components/SocialNetworking'
 import ContactUs from './components/ContactUs'
 import Footer from './components/Footer'
 import themeData from './themeData'
@@ -18,7 +18,7 @@ function App() {
       <Services themeData={themeData} />
       <Procedure themeData={themeData} />
       <CallToAction themeData={themeData} />
-      <SocialMedia />
+      <SocialNetworking themeData={themeData} />
       <ContactUs />
       <Footer />
     </div>
