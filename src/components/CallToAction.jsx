@@ -1,4 +1,6 @@
 import React from 'react'
+import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
+import { faPhoneVolume } from '@fortawesome/free-solid-svg-icons'
 
 class CallToAction extends React.Component {
   render() {
@@ -12,11 +14,11 @@ class CallToAction extends React.Component {
             Message us for a<span className="text-rose-600"> free </span>
             repair estimate
             <br />
-            <em className="lowercase">
-              or call us on::
-              <a className="telephone" href="tel:2220001119">
-                <span className="inline-flex items-baseline gap-x-2 pl-2 text-rose-600">
-                  {/* <i className="h-4 w-4 self-center" /> */}
+            <em className="inline-flex gap-x-2 lowercase">
+              or call us on:
+              <a href="tel:2220001119" className="text-rose-600">
+                <span className="inline-flex items-center gap-x-2 text-rose-600">
+                  <FontAwesomeIcon icon={faPhoneVolume} />
                   22200 01119
                 </span>
               </a>
