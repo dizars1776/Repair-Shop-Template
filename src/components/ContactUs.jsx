@@ -60,7 +60,7 @@ class ContactUs extends React.Component {
                     type="text"
                     id="name"
                     name="name"
-                    placeholder="How should i call you?"
+                    placeholder="What shall I call you?"
                     className="rounded-lg p-3 lg:w-11/12"
                   />
 
@@ -71,7 +71,7 @@ class ContactUs extends React.Component {
                     type="text"
                     id="mail"
                     name="mail"
-                    placeholder="What's your email?"
+                    placeholder="What is your email?"
                     className="rounded-lg p-3 lg:w-11/12"
                   />
 
