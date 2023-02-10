@@ -9,7 +9,10 @@ class ContactUs extends React.Component {
       ? this.props.themeData.contactUs
       : this.props
     return (
-      <section id="contact-us" className="w-full max-w-full text-white">
+      <section
+        id="contact-us"
+        className="w-full max-w-full -scroll-mt-[345px] text-white sm:-scroll-mt-8"
+      >
         <div className="grid w-full grid-cols-12 grid-rows-[minmax(300px,auto)] md:grid-rows-[minmax(0,835px)]">
           {/* <!-- map canvas, openstreetmap --> */}
           <div className="col-span-12 h-full w-full md:col-span-4">

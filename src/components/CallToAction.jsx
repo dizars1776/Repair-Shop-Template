@@ -7,7 +7,7 @@ class CallToAction extends React.Component {
     return (
       <section
         id="call-to-action"
-        className="scroll-mt-48 bg-slate-900 bg-cta-texture py-10 sm:py-16 md:scroll-mt-80"
+        className="scroll-mt-60 bg-slate-900 bg-cta-texture py-10 sm:py-16 md:scroll-mt-80"
       >
         <div className="container mx-auto flex flex-col items-center justify-center gap-y-5 sm:flex-row sm:justify-between">
           <p className="text-center font-semibold uppercase text-white sm:text-left">
