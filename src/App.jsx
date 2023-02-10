@@ -12,14 +12,14 @@ import './App.css'
 
 function App() {
   return (
-    <div id="App">
+    <div id="App" className="overflow-hidden">
       <Header themeData={themeData} />
       <Slider themeData={themeData} />
       <Services themeData={themeData} />
       <Procedure themeData={themeData} />
       <CallToAction themeData={themeData} />
       <SocialNetworking themeData={themeData} />
-      <ContactUs />
+      <ContactUs themeData={themeData} />
       <Footer />
     </div>
   )
