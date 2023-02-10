@@ -26,7 +26,7 @@ class CallToAction extends React.Component {
           </p>
           <a
             href="#contact-us"
-            className="my-auto w-fit rounded-full border-2 border-white px-4 py-2 font-semibold text-rose-600 hover:bg-rose-800 hover:text-white"
+            className="themePillBtn px-4"
           >
             FREE ESTIMATE
           </a>

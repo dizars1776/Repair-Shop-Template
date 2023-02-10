@@ -19,9 +19,9 @@ class ContactUs extends React.Component {
             {themeData && <MyMap themeData={themeData} />}
           </div>
           {/* <!-- contact us information --> */}
-          <div className="col-span-12 w-full bg-contactus-texture bg-cover bg-center bg-no-repeat md:col-span-8">
-            <div className="container mx-auto md:mx-0 md:px-20">
-              <div className="flex w-full flex-col gap-y-8 py-20">
+          <div className="col-span-12 h-full w-full bg-contactus-texture bg-cover bg-center bg-no-repeat md:col-span-8">
+            <div className="container mx-auto h-full md:mx-0 md:px-20">
+              <div className="flex h-full w-full flex-col gap-y-8 pt-20 pb-20 md:pb-0">
                 <h2 className="m-0 text-6xl text-rose-600">Contact Us</h2>
                 {/* Contact info */}
                 <div className="flex flex-col gap-y-4">
@@ -49,7 +49,10 @@ class ContactUs extends React.Component {
                   </div>
                 </div>
                 {/* contact form */}
-                <div className="flex flex-col gap-y-6 text-black lg:max-w-[770px] xl:max-w-[820px]">
+                <form
+                  method="post"
+                  className="flex flex-col gap-y-6 text-black lg:max-w-[770px] xl:max-w-[820px]"
+                >
                   <label htmlFor="fname" className="hidden">
                     Name
                   </label>
@@ -80,10 +83,18 @@ class ContactUs extends React.Component {
                     name="subject"
                     placeholder="How can i help?"
                     cols={30}
-                    rows={10}
-                    className="rounded-lg p-3 lg:w-11/12"
+                    rows={7}
+                    className="mb-2 resize-none rounded-lg p-3 lg:w-11/12"
                   ></textarea>
-                </div>
+
+                  <button
+                    name="submit"
+                    type="submit"
+                    className="themePillBtn px-12 sm:px-14 md:px-20"
+                  >
+                    Submit
+                  </button>
+                </form>
               </div>
             </div>
           </div>

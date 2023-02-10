@@ -58,4 +58,7 @@
   .container {
     @apply w-[98%] lg:w-full xl:max-w-[1024px] 2xl:max-w-[1024px];
   }
+  .themePillBtn {
+    @apply my-auto w-fit rounded-full border-2 border-white py-2 font-semibold text-rose-600 hover:bg-rose-800 hover:text-white;
+  }
 }
