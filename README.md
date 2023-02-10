@@ -1,4 +1,5 @@
-# Repair-Shop-Template &middot; [![GitHub license](https://img.shields.io/badge/license-MIT-blue.svg?style=flat-square)](https://github.com/your/your-project/blob/master/LICENSE)
+# Repair-Shop-Template &middot; [![GitHub license](https://img.shields.io/badge/license-MIT-blue.svg?style=flat-square)](https://github.com/your/your-project/blob/master/LICENSE) [![PRs Welcome](https://img.shields.io/badge/PRs-welcome-red.svg?style=flat-square)](https://github.com/dizars1776/Repair-Shop-Template/issues)
+
 
 A react template to showcase your repair shop and promote your services.
 _Currently under development.._
