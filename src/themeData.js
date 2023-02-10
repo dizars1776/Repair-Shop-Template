@@ -97,6 +97,17 @@ const themeData = {
       },
     ],
   },
+  contactUs: {
+    myAddress: 'Pl. El. Venizelou',
+    myCity: 'Chania',
+    myZip: '73132',
+    myState: 'Crete',
+    myPhone: '22200 01119',
+    mapLat: 35.51642,
+    mapLong: 24.01796,
+    mapZoom: 19,
+    markerUrl: 'https://goo.gl/maps/sCwxmAypgNDUZysa7',
+  },
 }
 
 export default themeData

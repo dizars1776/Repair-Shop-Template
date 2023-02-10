@@ -40,6 +40,11 @@
     @apply text-xl;
   }
 
+  h2,
+  h3 {
+    @apply font-semibold;
+  }
+
   a {
     @apply font-heading text-sky-800/90 outline-none duration-200 ease-in-out;
   }
