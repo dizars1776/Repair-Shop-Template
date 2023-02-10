@@ -50,7 +50,7 @@
   }
 
   section {
-    @apply -scroll-my-16 pb-20 sm:-scroll-my-12;
+    @apply -scroll-my-16 pb-20 sm:-scroll-my-12 last-of-type:pb-0;
   }
 }
 
