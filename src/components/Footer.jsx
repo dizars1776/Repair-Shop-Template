@@ -5,7 +5,7 @@ import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
 class Footer extends React.Component {
   render() {
     return (
-      <footer className="pt-10 pb-28 sm:py-10">
+      <footer className="py-10">
         <div className="container mx-auto flex items-center justify-evenly">
           <div className="flex flex-col gap-x-1">
             <p className="font-semibold text-sky-800">
