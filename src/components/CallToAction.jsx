@@ -24,10 +24,7 @@ class CallToAction extends React.Component {
               </a>
             </em>
           </p>
-          <a
-            href="#contact-us"
-            className="themePillBtn px-4"
-          >
+          <a href="#contact-us" className="themePillBtn px-4">
             FREE ESTIMATE
           </a>
         </div>
