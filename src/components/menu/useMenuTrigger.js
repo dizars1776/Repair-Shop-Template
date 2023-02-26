@@ -26,8 +26,6 @@ function useMenuTrigger(initState = false) {
       }
     })
   }, [])
-  // trigger toggle for the mobile menu
-  useEffect(() => {}, [])
 
   return {
     btnVisibility: menuBtnVisibility,
