@@ -12,18 +12,18 @@ const themeData = {
   slider: {
     slides: [
       {
-        mobile: './images/slider/slide01mobile.jpg',
-        desktop: './images/slider/slide01.jpg',
+        mobile: './images/slider/slide01mobile.webp',
+        desktop: './images/slider/slide01.webp',
         altText: 'slide 01',
       },
       {
-        mobile: './images/slider/slide02mobile.jpg',
-        desktop: './images/slider/slide02.jpg',
+        mobile: './images/slider/slide02mobile.webp',
+        desktop: './images/slider/slide02.webp',
         altText: 'slide 02',
       },
       {
-        mobile: './images/slider/slide03mobile.jpg',
-        desktop: './images/slider/slide03.jpg',
+        mobile: './images/slider/slide03mobile.webp',
+        desktop: './images/slider/slide03.webp',
         altText: 'slide 03',
       },
     ],
@@ -35,7 +35,7 @@ const themeData = {
         title: 'Camera body service',
         mainText:
           'Lorem ipsum dolor sit amet, consectetur adipiscing elit. Quisque ac lectus ac nulla lobortis pharetra et eget massa.',
-        img: 'images/services/camera-service-1.jpg',
+        img: 'images/services/camera-service-1.webp',
         imgAlt: 'camera body service',
       },
       {
@@ -43,7 +43,7 @@ const themeData = {
         title: 'Camera lens and sensor cleaning',
         mainText:
           'Lorem ipsum dolor sit amet, consectetur adipiscing elit. Quisque ac lectus ac nulla lobortis pharetra et eget massa. Nam interdum turpis in lorem lacinia, eu tincidunt leo tincidunt.',
-        img: 'images/services/camera-service-2.jpg',
+        img: 'images/services/camera-service-2.webp',
         imgAlt: 'camera lens cleaning',
       },
       {
@@ -51,7 +51,7 @@ const themeData = {
         title: 'Camera accessories repairs',
         mainText:
           'Aenean dignissim orci eget quam ultrices consectetur quis quis magna. Aenean eu ultrices sapien. Quisque quis lobortis risus.',
-        img: 'images/services/camera-service-3.jpg',
+        img: 'images/services/camera-service-3.webp',
         imgAlt: 'camera accessories service',
       },
     ],
@@ -81,7 +81,7 @@ const themeData = {
     socialProfiles: [
       {
         name: 'John Doe',
-        img: './images/social/profilephoto.jpg',
+        img: './images/social/profilephoto.webp',
         imgAlt: 'Owners profile photo',
         haveMail: 'mailto:johnDoe@camera-service.com',
         haveFb: 'https://facebook.com/profile-url',
@@ -89,7 +89,7 @@ const themeData = {
       },
       {
         name: 'Camera Service',
-        img: './images/social/businessphoto.jpg',
+        img: './images/social/businessphoto.webp',
         imgAlt: 'Business profile photo',
         haveMail: false,
         haveFb: 'https://facebook.com/profile-url',
