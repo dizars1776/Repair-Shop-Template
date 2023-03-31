@@ -1,4 +1,7 @@
+import { useTranslation } from 'react-i18next'
+
 function DesktopNav({ themeData }) {
+  const [t, i18n] = useTranslation()
   return (
     <div className="hidden uppercase tracking-wider sm:block">
       <ul id="menu" className="flex gap-x-4">
@@ -6,7 +9,7 @@ function DesktopNav({ themeData }) {
           ? themeData.menuItems.map(([title, url]) => (
               <li key={title}>
                 <a href={url} className="hover:text-rose-800">
-                  {title}
+                  {t(`navbar.${title}`)}
                 </a>
               </li>
             ))

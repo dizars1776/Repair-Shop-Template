@@ -1,3 +1,4 @@
+import { useTranslation } from 'react-i18next'
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
 import {
   faGripVertical,
@@ -6,6 +7,7 @@ import {
 import useMenuTrigger from './useMenuTrigger'
 
 function MobileNav({ themeData }) {
+  const [t, i18n] = useTranslation()
   const { btnVisibility, isOpen, trigger, hide, show } = useMenuTrigger(false)
 
   return (
@@ -27,7 +29,7 @@ function MobileNav({ themeData }) {
                         onClick={trigger}
                         className="text-sm font-semibold uppercase text-rose-800"
                       >
-                        {title}
+                        {t(title)}
                       </a>
                     </li>
                   ))

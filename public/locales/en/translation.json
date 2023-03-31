@@ -1,0 +1,62 @@
+{
+  "navbar": {
+    "title": "camera",
+    "subtitle": "service shop",
+    "services": "services",
+    "cost_estimate": "cost estimate",
+    "contact_us": "contact us"
+  },
+  "services": {
+    "cards": [
+      {
+        "title": "Camera body service",
+        "mainText": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Quisque ac lectus ac nulla lobortis pharetra et eget massa."
+      },
+      {
+        "title": "Camera lens and sensor cleaning",
+        "mainText": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Quisque ac lectus ac nulla lobortis pharetra et eget massa. Nam interdum turpis in lorem lacinia, eu tincidunt leo tincidunt."
+      },
+      {
+        "title": "Camera accessories repairs",
+        "mainText": "Aenean dignissim orci eget quam ultrices consectetur quis quis magna. Aenean eu ultrices sapien. Quisque quis lobortis risus."
+      }
+    ]
+  },
+  "procedure": {
+    "title": "Repair order instructions",
+    "step1": "Lorem ipsum dolor sit amet",
+    "step2": "consectetur adipiscing elit",
+    "step3": "sed do eiusmod tempor incididunt ut labore",
+    "step4": "et dolore magna aliqua",
+    "iconList": [
+      "We repair every camera brand",
+      "25 years of experience",
+      "Satisfied customers"
+    ]
+  },
+  "socialProfiles": [
+    {
+      "name": "John Doe",
+      "type": "Personal profile"
+    },
+    {
+      "name": "Camera Service",
+      "type": "Business profile"
+    }
+  ],
+  "contactUs": {
+    "contact_us": "Contact Us",
+    "store_address": "Store Address",
+    "address": "Pl. El. Venizelou",
+    "city": "Chania",
+    "state": "Crete",
+    "phone": "phone",
+    "name": "Name",
+    "mail": "Email",
+    "subject": "Subject",
+    "getName": "What shall i call you?",
+    "getMail": "What is your email?",
+    "getSubject": "How can i help?",
+    "submit": "Submit"
+  }
+}
