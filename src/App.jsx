@@ -13,7 +13,7 @@ import './i18n'
 
 const App = () => {
   return (
-    <div id="App" className="overflow-hidden">
+    <>
       <Suspense fallback={null}>
         <Header themeData={themeData} />
         <Slider themeData={themeData} />
@@ -24,7 +24,7 @@ const App = () => {
         <ContactUs themeData={themeData.contactUs} />
         <Footer />
       </Suspense>
-    </div>
+    </>
   )
 }
 
