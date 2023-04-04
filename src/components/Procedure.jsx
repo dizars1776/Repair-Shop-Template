@@ -22,7 +22,7 @@ const Procedure = ({ themeData }) => {
                 icon={faCameraRetro}
                 className="h-14 w-14 text-sky-800/90"
               />
-              {t(`${prefix}iconList.0`)}
+              {t(`${prefix}icon_list.0`)}
             </p>
             <hr className="h-px w-3/4 border-0 bg-gray-200 dark:bg-gray-700" />
             <p className="flex flex-col items-center gap-y-4">
@@ -30,7 +30,7 @@ const Procedure = ({ themeData }) => {
                 icon={faTrophy}
                 className="h-16 w-16 text-sky-800/90"
               />
-              {t(`${prefix}iconList.1`)}
+              {t(`${prefix}icon_list.1`)}
             </p>
             <hr className="h-px w-3/4 border-0 bg-gray-200 dark:bg-gray-700" />
             <p className="flex flex-col items-center gap-y-4">
@@ -38,7 +38,7 @@ const Procedure = ({ themeData }) => {
                 icon={faUsers}
                 className="h-16 w-16 text-sky-800/90"
               />
-              {t(`${prefix}iconList.2`)}
+              {t(`${prefix}icon_list.2`)}
             </p>
           </div>
         </aside>

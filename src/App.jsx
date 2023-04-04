@@ -21,7 +21,7 @@ const App = () => {
         <Procedure themeData={themeData.procedure} />
         <CallToAction themeData={themeData} />
         <SocialNetworking themeData={themeData} />
-        <ContactUs themeData={themeData.contactUs} />
+        <ContactUs themeData={themeData} />
         <Footer />
       </Suspense>
     </>

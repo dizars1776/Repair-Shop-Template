@@ -7,56 +7,77 @@
     "contact_us": "contact us"
   },
   "services": {
+    "main_text": {
+      "header": "Repair Services",
+      "sub_header": "Repair and maintenance of digital and classic cameras",
+      "first_paragraph": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Quisque ac lectus ac nulla lobortis pharetra et eget massa. Nam interdum turpis in lorem lacinia, eu tincidunt leo tincidunt. Integer tempor ut risus sagittis sollicitudin. Morbi pretium nulla vitae odio facilisis congue.",
+      "second_paragraph": "Aenean dignissim orci eget quam ultrices consectetur quis quis magna. Aenean eu ultrices sapien. Quisque quis lobortis risus. Mauris varius justo id nulla mollis, convallis luctus ex rutrum. Suspendisse dolor tortor, pulvinar vitae tortor ut, congue malesuada lacus. Donec eu maximus mi, ac tempor odio. Fusce tempus ac nulla vitae mollis."
+    },
     "cards": [
       {
         "title": "Camera body service",
-        "mainText": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Quisque ac lectus ac nulla lobortis pharetra et eget massa."
+        "main_text": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Quisque ac lectus ac nulla lobortis pharetra et eget massa."
       },
       {
         "title": "Camera lens and sensor cleaning",
-        "mainText": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Quisque ac lectus ac nulla lobortis pharetra et eget massa. Nam interdum turpis in lorem lacinia, eu tincidunt leo tincidunt."
+        "main_text": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Quisque ac lectus ac nulla lobortis pharetra et eget massa. Nam interdum turpis in lorem lacinia, eu tincidunt leo tincidunt."
       },
       {
         "title": "Camera accessories repairs",
-        "mainText": "Aenean dignissim orci eget quam ultrices consectetur quis quis magna. Aenean eu ultrices sapien. Quisque quis lobortis risus."
+        "main_text": "Aenean dignissim orci eget quam ultrices consectetur quis quis magna. Aenean eu ultrices sapien. Quisque quis lobortis risus."
       }
     ]
   },
   "procedure": {
     "title": "Repair order instructions",
-    "step1": "Lorem ipsum dolor sit amet",
-    "step2": "consectetur adipiscing elit",
-    "step3": "sed do eiusmod tempor incididunt ut labore",
-    "step4": "et dolore magna aliqua",
-    "iconList": [
+    "step_1": "Lorem ipsum dolor sit amet",
+    "step_2": "consectetur adipiscing elit",
+    "step_3": "sed do eiusmod tempor incididunt ut labore",
+    "step_4": "et dolore magna aliqua",
+    "icon_list": [
       "We repair every camera brand",
       "25 years of experience",
       "Satisfied customers"
     ]
   },
-  "socialProfiles": [
-    {
-      "name": "John Doe",
-      "type": "Personal profile"
-    },
-    {
-      "name": "Camera Service",
-      "type": "Business profile"
-    }
-  ],
-  "contactUs": {
-    "contact_us": "Contact Us",
+  "call_to_action": {
+    "title_start": "Message us for a",
+    "title_span": "free",
+    "title_end": "repair estimate",
+    "sub_title": "or call us on:",
+    "button_text": "Free Estimate"
+  },
+  "social_networking": {
+    "title": "Social Networking",
+    "social_profiles": [
+      {
+        "name": "John Doe",
+        "type": "Personal profile"
+      },
+      {
+        "name": "Camera Service",
+        "type": "Business profile"
+      }
+    ]
+  },
+  "contact_us": {
+    "title": "Contact Us",
     "store_address": "Store Address",
     "address": "Pl. El. Venizelou",
+    "zip": "zip:",
     "city": "Chania",
     "state": "Crete",
     "phone": "phone",
     "name": "Name",
     "mail": "Email",
     "subject": "Subject",
-    "getName": "What shall i call you?",
-    "getMail": "What is your email?",
-    "getSubject": "How can i help?",
+    "get_name": "What shall i call you?",
+    "get_mail": "What is your email?",
+    "get_subject": "How can i help?",
     "submit": "Submit"
+  },
+  "footer": {
+    "privacy_policy": "Privacy policy",
+    "cookie_policy": "Cookie policy"
   }
 }

@@ -33,21 +33,21 @@ const themeData = {
       {
         id: 'camera-body-repairs',
         title: 'title',
-        mainText: 'mainText',
+        mainText: 'main_text',
         img: 'images/services/camera-service-1.webp',
         imgAlt: 'camera body service',
       },
       {
         id: 'camera-lens-sensor-cleaning',
         title: 'title',
-        mainText: 'mainText',
+        mainText: 'main_text',
         img: 'images/services/camera-service-2.webp',
         imgAlt: 'camera lens cleaning',
       },
       {
         id: 'camera-accessories-repairs',
         title: 'title',
-        mainText: 'mainText',
+        mainText: 'main_text',
         img: 'images/services/camera-service-3.webp',
         imgAlt: 'camera accessories service',
       },
@@ -56,30 +56,27 @@ const themeData = {
   procedure: {
     title: 'title',
     ariaLabel: 'Repair procedure',
-    steps: ['step1', 'step2', 'step3', 'step4'],
+    steps: ['step_1', 'step_2', 'step_3', 'step_4'],
   },
-  social: {
+  socialNetworking: {
     socialProfiles: [
       {
         img: './images/social/profilephoto.webp',
-        imgAlt: 'Owners profile photo',
+        imgAlt: "Owner's profile photo",
         haveMail: 'mailto:johnDoe@camera-service.com',
         haveFb: 'https://facebook.com/profile-url',
       },
       {
         img: './images/social/businessphoto.webp',
-        imgAlt: 'Business profile photo',
+        imgAlt: "Business's profile photo",
         haveMail: false,
         haveFb: 'https://facebook.com/profile-url',
       },
     ],
   },
   contactUs: {
-    myAddress: 'address',
-    myCity: 'city',
-    myZip: '73132',
-    myState: 'state',
-    myPhone: '22200 01119',
+    myZipNumber: '73132',
+    myPhoneNumber: '22200 01119',
     mapLat: 35.51642,
     mapLong: 24.01796,
     mapZoom: 19,

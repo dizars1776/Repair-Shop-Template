@@ -5,12 +5,13 @@ import { faAt, faArrowRight } from '@fortawesome/free-solid-svg-icons'
 
 const SocialProfile = ({ themeData }) => {
   const [t, i18n] = useTranslation()
-
+  
   return (
     <ul className="flex w-full flex-col items-center gap-16 sm:flex-row sm:justify-start">
       {themeData &&
         themeData.socialProfiles.map((profile, index) => {
-          const prefix = `socialProfiles.${index}.`
+          const prefix = `social_networking.social_profiles.${index}.`
+
           return (
             <li key={index}>
               <div className="relative flex flex-col">

@@ -4,8 +4,10 @@ import { faPhoneVolume } from '@fortawesome/free-solid-svg-icons'
 import MyMap from './map/MyMap'
 
 const ContactUs = ({ themeData }) => {
+  const contactUs = themeData.contactUs
   const [t, i18n] = useTranslation()
-  const prefix = `contactUs.`
+  const prefix = `contact_us.`
+
   return (
     <section
       id="contact-us"
@@ -14,14 +16,14 @@ const ContactUs = ({ themeData }) => {
       <div className="grid w-full grid-cols-12 grid-rows-[minmax(300px,auto)] md:grid-rows-[minmax(0,835px)]">
         {/* <!-- map canvas, openstreetmap --> */}
         <div className="col-span-12 h-full w-full md:col-span-4">
-          {themeData && <MyMap themeData={themeData} />}
+          {contactUs && <MyMap themeData={contactUs} />}
         </div>
         {/* <!-- contact us information --> */}
         <div className="col-span-12 h-full w-full bg-contactus-texture bg-cover bg-center bg-no-repeat md:col-span-8">
           <div className="container mx-auto h-full md:mx-0 md:px-20">
             <div className="flex h-full w-full flex-col gap-y-8 pt-20 pb-20 md:pb-0">
               <h2 className="m-0 text-6xl text-rose-600">
-                {t(prefix + 'contact_us')}
+                {t(prefix + 'title')}
               </h2>
               {/* Contact info */}
               <div className="flex flex-col gap-y-4">
@@ -31,9 +33,9 @@ const ContactUs = ({ themeData }) => {
                     {t(prefix + 'store_address')}
                   </h3>
                   <p>
-                    {t(prefix + themeData.myAddress)}
+                    {t(prefix + 'address')}
                     <br />
-                    zip: {themeData.myZip}, {t(prefix + themeData.myState)}
+                  {t(prefix + 'zip')} {contactUs.myZipNumber}, {t(prefix + 'state')}
                   </p>
                 </div>
                 {/* phone */}
@@ -45,7 +47,7 @@ const ContactUs = ({ themeData }) => {
                       className="inline-flex items-center gap-x-2 text-rose-600"
                     >
                       <FontAwesomeIcon icon={faPhoneVolume} />
-                      <span>{themeData.myPhone}</span>
+                      <span>{contactUs.myPhoneNumber}</span>
                     </a>
                   </p>
                 </div>
@@ -62,7 +64,7 @@ const ContactUs = ({ themeData }) => {
                   type="text"
                   id="name"
                   name="name"
-                  placeholder={t(prefix + 'getName')}
+                  placeholder={t(prefix + 'get_name')}
                   className="rounded-lg p-3 lg:w-11/12"
                 />
 
@@ -73,7 +75,7 @@ const ContactUs = ({ themeData }) => {
                   type="text"
                   id="mail"
                   name="mail"
-                  placeholder={t(prefix + 'getMail')}
+                  placeholder={t(prefix + 'get_mail')}
                   className="rounded-lg p-3 lg:w-11/12"
                 />
 
@@ -83,7 +85,7 @@ const ContactUs = ({ themeData }) => {
                 <textarea
                   id="subject"
                   name="subject"
-                  placeholder={t(prefix + 'getSubject')}
+                  placeholder={t(prefix + 'get_subject')}
                   cols={30}
                   rows={7}
                   className="mb-2 resize-none rounded-lg p-3 lg:w-11/12"

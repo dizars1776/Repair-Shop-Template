@@ -1,34 +1,23 @@
 import React from 'react'
+import { useTranslation } from 'react-i18next'
 
-class HeaderServices extends React.Component {
-  render() {
-    return (
-      <div id="header-services">
-        <div className="container mx-auto">
-          <h2 className="text-6xl font-semibold sm:text-7xl">
-            Repair Services
-          </h2>
-          <h3>Repair and maintenance of digital and classic cameras</h3>
-          <p>
-            Lorem ipsum dolor sit amet, consectetur adipiscing elit. Quisque ac
-            lectus ac nulla lobortis pharetra et eget massa. Nam interdum turpis
-            in lorem lacinia, eu tincidunt leo tincidunt. Integer tempor ut
-            risus sagittis sollicitudin. Morbi pretium nulla vitae odio
-            facilisis congue.
-          </p>
-          <br />
-          <p>
-            Aenean dignissim orci eget quam ultrices consectetur quis quis
-            magna. Aenean eu ultrices sapien. Quisque quis lobortis risus.
-            Mauris varius justo id nulla mollis, convallis luctus ex rutrum.
-            Suspendisse dolor tortor, pulvinar vitae tortor ut, congue malesuada
-            lacus. Donec eu maximus mi, ac tempor odio. Fusce tempus ac nulla
-            vitae mollis.
-          </p>
-        </div>
+const HeaderServices = () => {
+  const [t, i18n] = useTranslation()
+  const prefix = 'services.main_text.'
+
+  return (
+    <div id="header-services">
+      <div className="container mx-auto">
+        <h2 className="text-6xl font-semibold sm:text-7xl">
+          {t(prefix + 'header')}
+        </h2>
+        <h3>{t(prefix + 'sub_header')}</h3>
+        <p>{t(prefix + 'first_paragraph')}</p>
+        <br />
+        <p>{t(prefix + 'second_paragraph')}</p>
       </div>
-    )
-  }
+    </div>
+  )
 }
 
 export default HeaderServices
