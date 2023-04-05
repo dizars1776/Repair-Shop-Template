@@ -1,29 +1,31 @@
-import i18next from 'i18next'
-import { useEffect, useState } from 'react'
+import { faLanguage } from '@fortawesome/free-solid-svg-icons'
+import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
+import useLanguageSwitch from './useLanguageSwitch'
 
 const LanguageSwitch = () => {
-  // get the language from the local storage if it exists else get it from the html's tag attribute
-  const lng = window.localStorage.getItem('i18nextLng')
-    ? window.localStorage.getItem('i18nextLng')
-    : document.documentElement.getAttribute('lang')
-  const [lang, setLang] = useState(lng)
-
-  const handleClick = () => {
-    lang === 'en' ? setLang('el') : setLang('en')
-  }
-
-  useEffect(() => {
-    i18next.changeLanguage(lang)
-    window.localStorage.setItem('i18nextLng', lang)
-    document.documentElement.setAttribute('lang', lang)
-  }, [lang])
+  const { lang, handleClick } = useLanguageSwitch()
 
   return (
-    <>
-      <button type="button" onClick={handleClick}>
-        {lang === 'en' ? 'ελ' : 'en'}
+    <div className="flex items-center justify-between text-base md:text-lg">
+      <FontAwesomeIcon
+        icon={faLanguage}
+        size="xl"
+        className="text-sky-800/90"
+      />
+      <button
+        type="button"
+        onClick={handleClick}
+        className="flex flex-row items-center justify-between gap-x-2 font-semibold"
+      >
+        <span className={lang === 'en' ? 'text-sky-800/90' : undefined}>
+          en
+        </span>
+        <hr className="h-3 w-[1px] bg-base-light"></hr>
+        <span className={lang === 'el' ? 'text-sky-800/90' : undefined}>
+          ελ
+        </span>
       </button>
-    </>
+    </div>
   )
 }
 

@@ -50,7 +50,7 @@ const Procedure = ({ themeData }) => {
             </h2>
             <div>
               <ul
-                aria-label={themeData.ariaLabel}
+                aria-label={t(prefix + 'aria_label_title')}
                 className="flex flex-col before:mb-8 before:font-heading before:text-3xl before:leading-5 before:tracking-wide before:text-sky-800/80 before:content-[attr(aria-label)]"
               >
                 {themeData.steps.map((step, index) => (

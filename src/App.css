@@ -1,5 +1,4 @@
-@import url('https://fonts.googleapis.com/css2?family=Outfit:wght@200;400;600;800&family=Roboto:wght@300;400;500;700;900&display=swap');
-@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@200;400;600;800&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Roboto+Condensed:wght@400;700&family=Roboto:ital,wght@0,400;0,500;0,700;1,400&display=swap');
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
@@ -29,7 +28,7 @@
   h1,
   h2,
   h3 {
-    @apply mb-8 font-heading leading-5 tracking-wide;
+    @apply mb-8 font-heading leading-5;
   }
 
   h2 {
@@ -45,8 +44,8 @@
     @apply font-semibold;
   }
 
-  a {
-    @apply font-heading text-sky-800/90 outline-none duration-200 ease-in-out;
+  nav a {
+    @apply font-sans font-semibold text-sky-800/90 outline-none duration-200 ease-in-out;
   }
 
   section {
@@ -59,6 +58,6 @@
     @apply w-[98%] lg:w-full xl:max-w-[1024px] 2xl:max-w-[1024px];
   }
   .themePillBtn {
-    @apply my-auto w-fit rounded-full border-2 border-white py-2 font-semibold text-rose-600 hover:bg-rose-800 hover:text-white;
+    @apply my-auto w-fit whitespace-nowrap rounded-full border-2 border-white py-2 text-center font-bold text-rose-600 hover:bg-rose-800 hover:text-white sm:text-lg;
   }
 }

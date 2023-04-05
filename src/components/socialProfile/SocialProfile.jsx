@@ -5,7 +5,7 @@ import { faAt, faArrowRight } from '@fortawesome/free-solid-svg-icons'
 
 const SocialProfile = ({ themeData }) => {
   const [t, i18n] = useTranslation()
-  
+
   return (
     <ul className="flex w-full flex-col items-center gap-16 sm:flex-row sm:justify-start">
       {themeData &&

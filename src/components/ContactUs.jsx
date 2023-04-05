@@ -35,7 +35,8 @@ const ContactUs = ({ themeData }) => {
                   <p>
                     {t(prefix + 'address')}
                     <br />
-                  {t(prefix + 'zip')} {contactUs.myZipNumber}, {t(prefix + 'state')}
+                    {t(prefix + 'zip')} {contactUs.myZipNumber},{' '}
+                    {t(prefix + 'state')}
                   </p>
                 </div>
                 {/* phone */}

@@ -14,19 +14,19 @@ const SettingsBtn = () => {
 
   useEffect(() => {
     const closeDropdownMenu = (e) => {
-      !settingsRef.current.contains(e.target) && setIsOpen(false) 
+      !settingsRef.current.contains(e.target) && setIsOpen(false)
     }
 
     document.body.addEventListener('click', closeDropdownMenu)
     return () => document.body.removeEventListener('click', closeDropdownMenu)
-  },[])
+  }, [])
 
   return (
-    <div ref={settingsRef} className='relative'>
+    <div ref={settingsRef} className="relative">
       <button type="button" className="ml-3" onClick={handleClick}>
         <FontAwesomeIcon
           icon={faGear}
-          className=" text-sky-800/90 hover:animate-spin  hover:text-rose-800"
+          className=" text-sky-800/90 hover:animate-spin-slow hover:text-rose-800 focus:text-rose-800 active:text-rose-800"
         ></FontAwesomeIcon>
       </button>
       {isOpen && <DropdownMenu />}

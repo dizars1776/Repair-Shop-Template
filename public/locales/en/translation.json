@@ -1,13 +1,13 @@
 {
   "navbar": {
-    "title": "camera",
-    "subtitle": "service shop",
+    "title": "Camera",
+    "sub_title": "Service Shop",
     "services": "services",
     "cost_estimate": "cost estimate",
     "contact_us": "contact us",
     "settings": {
-      "language": "Γλώσσα",
-      "theme": "Theme"
+      "theme-light": "light",
+      "theme-dark": "dark"
     }
   },
   "services": {
@@ -34,6 +34,7 @@
   },
   "procedure": {
     "title": "Repair order instructions",
+    "aria_label_title": "Repair procedure",
     "step_1": "Lorem ipsum dolor sit amet",
     "step_2": "consectetur adipiscing elit",
     "step_3": "sed do eiusmod tempor incididunt ut labore",

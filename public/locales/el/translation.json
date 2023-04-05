@@ -1,13 +1,13 @@
 {
   "navbar": {
     "title": "Camera",
-    "subtitle": "Service Shop",
+    "sub_title": "Service Shop",
     "services": "υπηρεσίες",
     "cost_estimate": "εκτίμηση κόστους",
     "contact_us": "επικοινωνία",
     "settings": {
-      "language": "Language",
-      "theme": "Θέμα"
+      "theme-light": "φωτεινό",
+      "theme-dark": "σκοτεινό"
     }
   },
   "services": {
@@ -33,7 +33,8 @@
     ]
   },
   "procedure": {
-    "title": "Οδηγίες για παραγγελία επισκευής",
+    "title": "Οδηγίες παραγγελίας επισκευής",
+    "aria_label_title": "Διαδικασία επισκευής",
     "step_1": "Έγινε δημοφιλές τη δεκαετία",
     "step_2": "Tου '60 με την έκδοση των δειγμάτων",
     "step_3": "Tης Letraset όπου περιελάμβαναν αποσπάσματα",

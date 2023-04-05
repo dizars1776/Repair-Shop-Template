@@ -6,9 +6,10 @@ import {
 } from '@fortawesome/free-solid-svg-icons'
 import useMenuTrigger from './useMenuTrigger'
 
-function MobileNav({ themeData }) {
-  const [t, i18n] = useTranslation()
+const MobileNav = ({ themeData }) => {
   const { btnVisibility, isOpen, trigger, hide, show } = useMenuTrigger(false)
+  const [t, i18n] = useTranslation()
+  const prefix = 'navbar.'
 
   return (
     <nav className="sm:hidden">
@@ -21,29 +22,18 @@ function MobileNav({ themeData }) {
         >
           <div className="px-4 py-6">
             <ul className="flex items-center justify-evenly">
-              {themeData.menuItems
-                ? themeData.menuItems.map(([title, url]) => (
-                    <li key={title} className="whitespace-nowrap">
-                      <a
-                        href={url}
-                        onClick={trigger}
-                        className="text-sm font-semibold uppercase text-rose-800"
-                      >
-                        {t(title)}
-                      </a>
-                    </li>
-                  ))
-                : [1, 2, 3].map((e) => (
-                    <li key={e} className="whitespace-nowrap">
-                      <a
-                        href="#"
-                        onClick={trigger}
-                        className="text-sm uppercase text-rose-800"
-                      >
-                        item {e}
-                      </a>
-                    </li>
-                  ))}
+              {themeData.menuItems &&
+                themeData.menuItems.map(([title, url]) => (
+                  <li key={title} className="whitespace-nowrap">
+                    <a
+                      href={url}
+                      onClick={trigger}
+                      className="text-sm font-semibold uppercase text-rose-800 drop-shadow-2xl"
+                    >
+                      {t(prefix + title)}
+                    </a>
+                  </li>
+                ))}
             </ul>
           </div>
         </div>
