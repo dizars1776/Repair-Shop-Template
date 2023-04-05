@@ -21,7 +21,7 @@ const LanguageSwitch = () => {
   return (
     <>
       <button type="button" onClick={handleClick}>
-        {lang}
+        {lang === 'en' ? 'ελ' : 'en'}
       </button>
     </>
   )

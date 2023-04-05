@@ -1,10 +1,10 @@
 import { useTranslation } from 'react-i18next'
-import LanguageSwitch from '../switches/languageSwitch/LanguageSwitch'
+import SettingsBtn from './buttons/SettingsBtn'
 
 function DesktopNav({ themeData }) {
   const [t, i18n] = useTranslation()
   return (
-    <div className="hidden uppercase tracking-wider sm:block">
+    <div className="hidden uppercase tracking-wider sm:flex sm:gap-x-4 text-lg">
       <ul id="menu" className="flex gap-x-4">
         {themeData.menuItems &&
           themeData.menuItems.map(([title, url]) => {
@@ -15,11 +15,9 @@ function DesktopNav({ themeData }) {
                 </a>
               </li>
             )
-          })}
-        <li>
-          <LanguageSwitch />
-        </li>
+          })} 
       </ul>
+      <SettingsBtn />
     </div>
   )
 }

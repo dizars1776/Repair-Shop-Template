@@ -4,7 +4,11 @@
     "subtitle": "Service Shop",
     "services": "υπηρεσίες",
     "cost_estimate": "εκτίμηση κόστους",
-    "contact_us": "επικοινωνία"
+    "contact_us": "επικοινωνία",
+    "settings": {
+      "language": "Language",
+      "theme": "Θέμα"
+    }
   },
   "services": {
     "main_text": {

@@ -4,7 +4,11 @@
     "subtitle": "service shop",
     "services": "services",
     "cost_estimate": "cost estimate",
-    "contact_us": "contact us"
+    "contact_us": "contact us",
+    "settings": {
+      "language": "Γλώσσα",
+      "theme": "Theme"
+    }
   },
   "services": {
     "main_text": {
