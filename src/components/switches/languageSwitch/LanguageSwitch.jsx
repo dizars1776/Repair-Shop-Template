@@ -10,7 +10,7 @@ const LanguageSwitch = () => {
       <FontAwesomeIcon
         icon={faLanguage}
         size="xl"
-        className="text-sky-800/90"
+        className="pr-2 text-sky-800/90"
       />
       <button
         type="button"

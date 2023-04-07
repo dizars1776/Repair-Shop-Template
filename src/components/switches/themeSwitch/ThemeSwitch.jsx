@@ -12,7 +12,7 @@ const ThemeSwitch = () => {
         icon={faCircleHalfStroke}
         size="xl"
         rotation={180}
-        className="text-sky-800/90"
+        className="pl-2 text-sky-800/90"
       />
       <button
         type="button"
