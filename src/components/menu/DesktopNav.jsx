@@ -1,22 +1,32 @@
-function DesktopNav({ themeData }) {
+import { useTranslation } from 'react-i18next'
+import Settings from './settings/Settings'
+import HamburgerBtn from './HamburgerBtn'
+
+function DesktopNav({ themeData, hasMenuHandler, isMenuOpen }) {
+  const [t, i18n] = useTranslation()
+
   return (
-    <div className="hidden uppercase tracking-wider sm:block">
-      <ul id="menu" className="flex gap-x-4">
-        {themeData.menuItems
-          ? themeData.menuItems.map(([title, url]) => (
-              <li key={title}>
-                <a href={url} className="hover:text-rose-800">
-                  {title}
-                </a>
-              </li>
-            ))
-          : [1, 2, 3].map((e) => (
-              <li key={e}>
-                <a href="#">item {e}</a>
-              </li>
-            ))}
-      </ul>
-    </div>
+    <>
+      <div className="hidden text-lg uppercase tracking-wider sm:gap-x-4 md:flex">
+        <ul id="menu" className="flex gap-x-4">
+          {themeData.menuItems &&
+            themeData.menuItems.map(([title, url]) => {
+              return (
+                <li key={title}>
+                  <a
+                    href={url}
+                    className="text-base hover:text-rose-800 md:text-lg"
+                  >
+                    {t(`navbar.${title}`)}
+                  </a>
+                </li>
+              )
+            })}
+        </ul>
+        <Settings />
+      </div>
+      <HamburgerBtn hasMenuHandler={hasMenuHandler} isMenuOpen={isMenuOpen} />
+    </>
   )
 }
 

@@ -5,8 +5,8 @@ const themeData = {
     subTitle: 'service shop',
     menuItems: [
       ['services', '#services'],
-      ['cost estimate', '#call-to-action'],
-      ['contact us', '#contact-us'],
+      ['cost_estimate', '#call-to-action'],
+      ['contact_us', '#contact-us'],
     ],
   },
   slider: {
@@ -32,77 +32,51 @@ const themeData = {
     cards: [
       {
         id: 'camera-body-repairs',
-        title: 'Camera body service',
-        mainText:
-          'Lorem ipsum dolor sit amet, consectetur adipiscing elit. Quisque ac lectus ac nulla lobortis pharetra et eget massa.',
+        title: 'title',
+        mainText: 'main_text',
         img: 'images/services/camera-service-1.webp',
         imgAlt: 'camera body service',
       },
       {
         id: 'camera-lens-sensor-cleaning',
-        title: 'Camera lens and sensor cleaning',
-        mainText:
-          'Lorem ipsum dolor sit amet, consectetur adipiscing elit. Quisque ac lectus ac nulla lobortis pharetra et eget massa. Nam interdum turpis in lorem lacinia, eu tincidunt leo tincidunt.',
+        title: 'title',
+        mainText: 'main_text',
         img: 'images/services/camera-service-2.webp',
         imgAlt: 'camera lens cleaning',
       },
       {
         id: 'camera-accessories-repairs',
-        title: 'Camera accessories repairs',
-        mainText:
-          'Aenean dignissim orci eget quam ultrices consectetur quis quis magna. Aenean eu ultrices sapien. Quisque quis lobortis risus.',
+        title: 'title',
+        mainText: 'main_text',
         img: 'images/services/camera-service-3.webp',
         imgAlt: 'camera accessories service',
       },
     ],
   },
   procedure: {
-    title: 'Repair order instructions',
+    title: 'title',
     ariaLabel: 'Repair procedure',
-    liItems: [
-      'Lorem ipsum dolor sit amet',
-      'consectetur adipiscing elit',
-      'sed do eiusmod tempor incididunt ut labore',
-      'et dolore magna aliqua',
-    ],
-    iconList: [
-      {
-        text: 'We repair every camera brand',
-      },
-      {
-        text: '25 years of experience',
-      },
-      {
-        text: 'Satisfied customers',
-      },
-    ],
+    steps: ['step_1', 'step_2', 'step_3', 'step_4'],
   },
-  social: {
+  socialNetworking: {
     socialProfiles: [
       {
-        name: 'John Doe',
         img: './images/social/profilephoto.webp',
-        imgAlt: 'Owners profile photo',
+        imgAlt: "Owner's profile photo",
         haveMail: 'mailto:johnDoe@camera-service.com',
         haveFb: 'https://facebook.com/profile-url',
-        type: 'Personal profile',
       },
       {
-        name: 'Camera Service',
         img: './images/social/businessphoto.webp',
-        imgAlt: 'Business profile photo',
+        imgAlt: "Business's profile photo",
         haveMail: false,
         haveFb: 'https://facebook.com/profile-url',
-        type: 'Business profile',
       },
     ],
   },
   contactUs: {
-    myAddress: 'Pl. El. Venizelou',
-    myCity: 'Chania',
-    myZip: '73132',
-    myState: 'Crete',
-    myPhone: '22200 01119',
+    myZipNumber: '73132',
+    myPhoneNumber: '22200 01119',
     mapLat: 35.51642,
     mapLong: 24.01796,
     mapZoom: 19,

@@ -13,10 +13,13 @@ module.exports = {
       colors: {
         'base-light': '#686868',
       },
+      animation: {
+        'spin-slow': 'spin 6s linear infinite',
+      },
     },
     fontFamily: {
       sans: ['Roboto', 'sans-serif'],
-      heading: ['Outfit', 'sans-serif'],
+      heading: ['Roboto Condensed', 'sans-serif'],
     },
   },
   plugins: [],
