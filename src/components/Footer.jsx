@@ -41,10 +41,7 @@ const Footer = () => {
           </p>
         </div>
         <div>
-          <a
-            href="#header"
-            className="text-3xl text-sky-800/80 hover:text-rose-800"
-          >
+          <a href="#" className="text-3xl text-sky-800/80 hover:text-rose-800">
             <FontAwesomeIcon icon={faChevronUp} />
           </a>
         </div>

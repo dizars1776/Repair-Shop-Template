@@ -1,7 +1,7 @@
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
 import { faGear } from '@fortawesome/free-solid-svg-icons'
 import { useEffect, useRef, useState } from 'react'
-import SettingsDropdown from '../Dropdown'
+import Dropdown from '../Dropdown'
 import LanguageSwitch from '../../switches/languageSwitch/LanguageSwitch'
 import ThemeSwitch from '../../switches/themeSwitch/ThemeSwitch'
 
@@ -37,10 +37,10 @@ const Settings = () => {
         ></FontAwesomeIcon>
       </button>
       {isOpen && (
-        <SettingsDropdown>
+        <Dropdown>
           <LanguageSwitch />
           <ThemeSwitch />
-        </SettingsDropdown>
+        </Dropdown>
       )}
     </div>
   )

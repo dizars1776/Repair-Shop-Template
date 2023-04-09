@@ -4,9 +4,11 @@ import 'swiper/css'
 import 'swiper/css/effect-fade'
 import 'swiper/css/autoplay'
 import { EffectFade, Autoplay } from 'swiper'
+import useScrollDirection from './hooks/useScrollDirection'
 
 const Slider = ({ themeData }) => {
   const slider = themeData.slider
+
   return (
     <Swiper
       centeredSlides={true}
