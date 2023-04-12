@@ -41,12 +41,15 @@ const Footer = () => {
           </p>
         </div>
         <div>
-          <a
-            href="#header"
+          <button
+            type="button"
             className="text-3xl text-sky-800/80 hover:text-rose-800"
+            onClick={() => {
+              window.scrollTo({ top: 0, behavior: 'smooth' })
+            }}
           >
             <FontAwesomeIcon icon={faChevronUp} />
-          </a>
+          </button>
         </div>
       </div>
     </footer>
