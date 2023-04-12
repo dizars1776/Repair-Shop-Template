@@ -2,10 +2,12 @@ import React from 'react'
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
 import { faPhoneVolume } from '@fortawesome/free-solid-svg-icons'
 import { useTranslation } from 'react-i18next'
+import useMenuScroll from './menu/useMenuScroll'
 
 const CallToAction = () => {
   const [t, i18n] = useTranslation()
   const prefix = 'call_to_action.'
+  const { simpleScroll } = useMenuScroll()
 
   return (
     <section
@@ -30,7 +32,11 @@ const CallToAction = () => {
             </a>
           </em>
         </p>
-        <a href="#contact-us" className="themePillBtn px-4">
+        <a
+          href="#contact-form"
+          className="themePillBtn px-4"
+          onClick={simpleScroll}
+        >
           {t(prefix + 'button_text')}
         </a>
       </div>

@@ -1,9 +1,11 @@
 import { useTranslation } from 'react-i18next'
 import Settings from './settings/Settings'
 import HamburgerBtn from './HamburgerBtn'
+import useMenuScroll from './useMenuScroll'
 
 function DesktopNav({ themeData, hasMenuHandler, isMenuOpen }) {
   const [t, i18n] = useTranslation()
+  const { simpleScroll } = useMenuScroll()
 
   return (
     <>
@@ -16,6 +18,7 @@ function DesktopNav({ themeData, hasMenuHandler, isMenuOpen }) {
                   <a
                     href={url}
                     className="text-base hover:text-rose-800 md:text-lg"
+                    onClick={simpleScroll}
                   >
                     {t(`navbar.${title}`)}
                   </a>

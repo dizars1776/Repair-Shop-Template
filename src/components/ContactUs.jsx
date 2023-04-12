@@ -19,7 +19,10 @@ const ContactUs = ({ themeData }) => {
           {contactUs && <MyMap themeData={contactUs} />}
         </div>
         {/* <!-- contact us information --> */}
-        <div className="col-span-12 h-full w-full bg-contactus-texture bg-cover bg-center bg-no-repeat md:col-span-8">
+        <div
+          id="contact-form"
+          className="col-span-12 h-full w-full bg-contactus-texture bg-cover bg-center bg-no-repeat md:col-span-8"
+        >
           <div className="container mx-auto h-full md:mx-0 md:px-20">
             <div className="flex h-full w-full flex-col gap-y-8 pt-20 pb-20 md:pb-0">
               <h2 className="m-0 text-6xl text-rose-600">
